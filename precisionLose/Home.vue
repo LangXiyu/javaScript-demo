@@ -1,16 +1,12 @@
 <template>
-    <div class="home">
-
-    </div>
+    <div class="home"></div>
 </template>
 
 <script>
     export default {
         name: "home",
         data() {
-            return {
-
-            }
+            return {}
         },
         mounted() {
             let num1 = this.mulWay(1.1, 141.24); // 解决 JS(加减乘除)运算精度丢失问题
@@ -24,22 +20,22 @@
             * @param b {number} 运算数2
             * @param op {string} 运算类型，有加减乘除（add/subtract/multiply/divide）
             */
-            // 加法函数
+            // 加法
             addWay: function(a, b) {
                 return this.operation(a, b, 'add')
             },
 
-            // 减法函数
+            // 减法
             subWay: function(a, b) {
                 return this.operation(a, b, 'subtract')
             },
 
-            // 乘法函数
+            // 乘法
             mulWay: function(a, b) {
                 return this.operation(a, b, 'multiply')
             },
 
-            // 除法函数
+            // 除法
             divWay: function(a, b) {
                 return this.operation(a, b, 'divide')
             },
@@ -90,7 +86,7 @@
              * 将一个浮点数转成整数，返回整数和倍数。如 3.14 >> 314，倍数是 100
              * @param floatNum {number} 小数
              * @return {object}
-             *   {times:100, num: 314}
+             * {times:100, num: 314}
              */
             toInteger: function(floatNum) {
                 let ret = {
@@ -99,7 +95,7 @@
                 };
                 let isNegative = floatNum < 0;
                 if (this.isInteger(floatNum)) {
-                    ret.num = floatNum
+                    ret.num = floatNum;
                     return ret
                 };
                 let strfi  = floatNum + '';
@@ -111,7 +107,7 @@
                 if (isNegative) {
                     intNum = -intNum
                 };
-                ret.num = intNum
+                ret.num = intNum;
                 return ret
             },
 
