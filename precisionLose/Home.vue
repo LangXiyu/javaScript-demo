@@ -1,9 +1,5 @@
 <script>
     export default {
-        name: "home",
-        data() {
-            return {}
-        },
         mounted() {
             let num1 = this.mulWay(1.1, 141.24); // 解决 JS(加减乘除)运算精度丢失问题
             let num2 = this.retainDec(num1, 4, true); // 保留两位小数(四舍五入/非四舍五入)
