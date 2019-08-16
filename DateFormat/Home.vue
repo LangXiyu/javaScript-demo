@@ -7,9 +7,6 @@
 <script>
     export default {
         name: "home",
-        data() {
-            return {}
-        },
         mounted() {
             Date.prototype.format = function(fmt) {
                 let o = {
@@ -35,13 +32,7 @@
                 return fmt;
             },
 
-            document.getElementById("demo1").innerHTML=new Date().format("yyyy-MM-dd hh:mm:ss");
-
-        },
-        methods: {}
-    };
+            document.getElementById("demo1").innerHTML=new Date().format("yyyy-MM-dd hh:mm:ss")
+        }
+    }
 </script>
-
-<style scoped type="text/css">
-
-</style>
