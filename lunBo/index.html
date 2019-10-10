@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <div class="layout-box" onmousemove="showOperate()" onmouseout="hideOperate()">
+        <div class="banner-box">
+            <ul class="banner-box_ul"></ul>
+            <div class="banner-operate-box">
+                <div class="operate-left circle" title="上一张" onmouseout="startInterval()">
+                    <a href="javascript:void(0)" class="sign"><</a>
+                </div>
+                <div class="operate-right circle" title="下一张" onmouseout="startInterval()">
+                    <a href="javascript:void(0)" class="sign">></a>
+                </div>
+            </div>
+        </div>
+   </div>
+<script src="index.js"></script>
+</body>
+</html>
