@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.layout-box {
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden
+}
+
+.layout-box > .banner-box {
+    height: 450px;
+}
+
+.layout-box > .banner-box > .banner-box_ul {
+   width: 100%;
+   height: 100%;
+   transition: 1s;
+   position: relative
+}
+
+.layout-box > .banner-box > .banner-box_ul > li {
+    list-style-type: none
+}
+
+.layout-box > .banner-box > .banner-box_ul > li > img {
+    width: 800px;
+    height: 450px;
+}
+
+.layout-box > .banner-box > .banner-operate-box {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 42%
+}
+
+.layout-box > .banner-box > .banner-operate-box > .operate-left {
+    float: left;
+    margin-left:20px;
+}
+
+.layout-box > .banner-box > .banner-operate-box > .operate-right {
+    float: right;
+    margin-right:20px;
+}
+
+.layout-box > .banner-box > .banner-operate-box > .circle {
+    width: 30px;
+    height: 30px;
+    margin-top:10px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    display: none;
+    cursor: pointer;
+}
+
+.layout-box > .banner-box > .banner-operate-box > .circle > .sign {
+    line-height: 25px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
