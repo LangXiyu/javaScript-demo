@@ -1,4 +1,3 @@
-### 解决 将日期格式化为指定格式
+### 示例
 
-如： new Date().format("yyyy-MM-dd hh:mm:ss")
-   
+![Image text](https://i.loli.net/2019/10/21/YWyebVXpEZAdPF4.gif)
